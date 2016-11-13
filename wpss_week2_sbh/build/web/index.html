@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formular</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="form" style="height: 500px;">
+            <h3>Udfyld formularen:</h3>
+        <form action="FormServlet" method="POST">
+            <table border="0">
+                <tbody>
+                    <tr>
+                        <td>Fornavn:</td>
+                        <td><input type="text" name="firstname" /></td>
+                    </tr>
+                    <tr>
+                        <td>Efternavn: </td>
+                        <td><input type="text" name="lastname" /></td>
+                    </tr>
+                    <tr>
+                        <td>By:</td>
+                        <td><input type="text" name="city" /></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="text" name="mail" /></td>
+                    </tr>
+                    <tr>
+                        <td>Mobil:</td>
+                        <td><input type="text" name="mobil" /></td>
+                    </tr>
+                    <tr>
+                        <td>URL til billede:</td>
+                        <td><input type="text" name="image" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br>
+            Fødselsår: <select name="birth">
+                            <option>1985</option>
+                            <option>1986</option>
+                            <option>1987</option>
+                            <option>1988</option>
+                        </select>
+            <br><br>
+            Vælg dit køn: <br>
+            Mand <input type="radio" name="sex" value="mand" /> 
+            Kvinde <input type="radio" name="sex" value="kvinde" />
+            <br><br>
+            Beskrivelse: <br>
+            <textarea name="description" rows="3" cols="40">
+            </textarea>
+            <br>
+            
+            <p><input type="submit" value="Send" /></p>
+                     
+        </form>
+        </div>
+    </body>
+</html>
