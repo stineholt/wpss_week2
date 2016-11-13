@@ -29,7 +29,8 @@
                 <tr><td>Køn:</td><td><%= request.getParameter("sex")%></td></tr>
                 <tr><td>Beskrivelse:</td><td><%= request.getParameter("description")%></td></tr>
             </tbody></table>
-            <img style="width: 200px" src="<%= request.getParameter("imageurl")%>"/>
+            
+            <img style="width: 200px" src="<%= request.getParameter("image")%>"/>
 
         </div>
     </body>

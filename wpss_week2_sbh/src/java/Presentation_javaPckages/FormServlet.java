@@ -43,7 +43,7 @@ public class FormServlet extends HttpServlet {
         String birth = request.getParameter("birth");
         String sex = request.getParameter("sex");
         String description = request.getParameter("description");
-        
+        String image = request.getParameter("image");
         String imageurl = request.getParameter("image");
                 
         try (PrintWriter out = response.getWriter()) {
